@@ -109,22 +109,8 @@ function App() {
           </p>
 
           <div className="name-section">
-            <label htmlFor="teacher-name">
-              Who are we thanking today?
-            </label>
-
-            <input
-              id="teacher-name"
-              type="text"
-              placeholder="Enter your teacher's name"
-              value={teacherName}
-              onChange={(e) => setTeacherName(e.target.value)}
-              maxLength={40}
-            />
-
             <button
               onClick={() => setStarted(true)}
-              disabled={!teacherName.trim()}
             >
               Enter the Classroom
               <span>→</span>
@@ -132,7 +118,7 @@ function App() {
           </div>
 
           <p className="landing-footer">
-            Made with gratitude ❤️
+            Made with gratitude by MEHAK❤️
           </p>
         </motion.div>
       </div>
@@ -202,19 +188,13 @@ function App() {
         <p>SEPTEMBER 5 • TEACHER'S DAY</p>
 
         <h2>
-          Thank You,
+          "Teaching is a work of heart"
           <br />
-          {teacherName}!
         </h2>
 
         <div className="board-line" />
-
         <span>You made a difference.</span>
       </div>
-
-      <p className="click-hint">
-        ✦ Click around the classroom ✦
-      </p>
 
       {/* CLASSROOM FLOOR */}
       <div className="classroom-floor">
@@ -566,7 +546,7 @@ function App() {
               )}
 
               <div className="letter-signature">
-                With gratitude,
+                With gratitude by MEHAK
                 <br />
                 <strong>
                   {studentName || "Your Student"} ❤️
